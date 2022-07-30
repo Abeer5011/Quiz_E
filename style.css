@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 100vh;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+#result{
+    font-size: 30px ;
+    text-transform: uppercase;
+    
+}
+
+#spanA{
+color: saddlebrown;
+}
