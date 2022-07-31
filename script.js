@@ -1,7 +1,6 @@
 const questionSec = document.getElementById("question")
 const answerButton = document.querySelectorAll(".answer")
 const main = document.getElementById("main")
-// const sa = document.getElementById("sa")
 const result = document.getElementById("result")
 
 let questionIndex = 0
@@ -80,11 +79,6 @@ function nextQ() {
       result.style.display = "inline"
       result.innerHTML = `you have answered <span id="spanA">${correctAnswersCount}</span> correct answers`
     }, 1000)
-
-    // answerButton.forEach(button => {
-    //   button.removeEventListener("click", selectAnswer)
-    // })
-    // sa.style.display = "inline"
   } else {
     result.style.display = "none"
 
@@ -97,7 +91,7 @@ function nextQ() {
     }, 1000)
   }
 }
-// sa.addEventListener("click", () => nextQ())
+
 function selectAnswer(e) {
   const correctAnswer = e.target.dataset.correct
   console.log(correctAnswer)
